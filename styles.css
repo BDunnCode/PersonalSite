@@ -10,35 +10,49 @@ CSS RESET
   
   html,
   body {
+    display: flex;
     height: 100%;
+    background: linear-gradient(to right, #FFFFFF, #000000);
+    justify-content: center;
+    
+
   }
   
 /* ====================
-VISUAL LAYOUT WORK
+VISUAL LAYOUT WORK SIMPLE LAYER
 ==================== */  
 #main-card {
     display: flex;
     flex-direction: column;
+    width: 500px;
 }
 
 #header {
     background-color: black;
-    height: 100px;
+    height: 80px;
     width: 100%;
     color: white;
     text-align: center;
 } 
 
 #intro {
-    background-color: teal;
-    height: 600px;
+    background-color: white;
+    height: 400px;
     width: 100%;
-    color: white;
-    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
 }
 
+#intro p {
+    border: 2px solid green;
+}
+
+
 #skills {
-    background-color: green;
+    background-color: black;
     height: 450px;
     width: 100%;
     color: white;
@@ -46,15 +60,15 @@ VISUAL LAYOUT WORK
 }
 
 #projects {
-    background-color: orange;
+    background-color: white;
     height: 1000px;
     width: 100%;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 #about {
-    background-color: blue;
+    background-color: black;
     height: 600px;
     width: 100%;
     color: white;
@@ -62,20 +76,140 @@ VISUAL LAYOUT WORK
 }
 
 #contact {
-    background-color: purple;
+    background-color: white;
     height: 550px;
     width: 100%;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 #footer {
-    background-color: red;
+    background-color: black;
     height: 150px;
     width: 100%;
     color: white;
     text-align: center;
 }
+
+/* ====================
+VISUAL LAYOUT SECOND LAYER
+==================== */  
+
+/* All header layout stuff */
+
+#main-card #header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-card #header p {
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 1.5em;
+}
+
+#hamburger-div {
+    background-color: red;
+    height: 100%;
+    width: 80px;
+}
+
+/* Intro Layout Stuff */
+#intro {
+    display: flex;
+    flex-direction: column;
+}
+#intro p {
+    font-size: 1.5em;
+}
+
+#shortcut-btn-container {
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+}
+
+#shortcut-btn-container .shortcut-btn {
+    border: 2px solid orangered;
+    text-align: center;
+}
+
+/* Skills Layout */
+
+#graphic-container {
+    border: 2px solid slateblue;
+    height: 85%;
+    margin: 15px;
+}
+
+
+/* Projects Layout */
+
+#projects {
+    border: 2px solid LIME;
+    height: 1000px;
+}
+
+.project-container {
+    border: 2px solid greenyellow;
+    height: 300px;
+}
+
+.project-header {
+    border: 2px solid black;
+}
+
+.tech-stack {
+    border: 2px solid brown;
+    height: 40px;
+}
+
+.collaborators {
+    border: 2px solid black;
+    height: 20px;
+}
+
+.project-description { 
+    border: 2px solid gray;
+    height: 20px;
+}
+
+.note {
+    border: 2px solid black;
+    height: 20px;
+}
+
+.btn-container {
+    border: 2px solid black;
+    height: 20px;
+}
+
+.demo-container {
+    height: 50%;
+    background-color: red;
+}
+
+
+
+
+/* ====================
+SHARED CSS PROPERTIES
+==================== */  
+
+.section-header {
+    border: 2px solid lightsalmon;
+    margin: 10px;
+    font-size: 24px;
+}
+
+.inputs {
+    width: 80%;
+}
+
+
+
 
 /* ====================
 BREAKPOINTS
@@ -84,17 +218,15 @@ BREAKPOINTS
 /* For Tablets */
 @media (min-width: 576px) {
     #main-card {    
-        /* max-width: 400px; */
+        max-width: 700px;
         margin: 0 auto;
-    }
-
-    body {
-        /* background: linear-gradient(to right, #FFFFFF, #000000) */
     }
 }
 
 /* For Desktops */
 
 @media (min-width: 900px) {
-
+    #main-card {
+        max-width: 1000px;
+    }
 }
