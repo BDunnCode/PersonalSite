@@ -43,11 +43,11 @@ VISUAL LAYOUT WORK SIMPLE LAYER
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 #intro p {
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 
@@ -126,20 +126,20 @@ VISUAL LAYOUT SECOND LAYER
 }
 
 #shortcut-btn-container {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     display: flex;
     flex-direction: column;
 }
 
 #shortcut-btn-container .shortcut-btn {
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     text-align: center;
 }
 
 /* Skills Layout */
 
 #graphic-container {
-    border: 2px solid slateblue;
+    /* border: 2px solid slateblue; */
     height: 85%;
     margin: 15px;
 }
@@ -148,41 +148,41 @@ VISUAL LAYOUT SECOND LAYER
 /* Projects Layout */
 
 #projects {
-    border: 2px solid LIME;
+    /* border: 2px solid LIME; */
     height: 1000px;
 }
 
 .project-container {
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     height: 300px;
 }
 
 .project-header {
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .tech-stack {
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     height: 40px;
 }
 
 .collaborators {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 20px;
 }
 
 .project-description { 
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     height: 20px;
 }
 
 .note {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 20px;
 }
 
 .btn-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 20px;
 }
 
@@ -191,7 +191,9 @@ VISUAL LAYOUT SECOND LAYER
     background-color: red;
 }
 
-
+/* ====================
+CONTACT SECTION
+==================== */  
 
 
 /* ====================
@@ -199,14 +201,18 @@ SHARED CSS PROPERTIES
 ==================== */  
 
 .section-header {
-    border: 2px solid lightsalmon;
+    /* border: 2px solid lightsalmon; */
     margin: 10px;
     font-size: 24px;
 }
 
-.inputs {
+.input {
+    margin: 10px;
     width: 80%;
+    height: 30px;
 }
+
+
 
 
 
