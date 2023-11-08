@@ -14,8 +14,6 @@ CSS RESET
     height: 100%;
     background: linear-gradient(to right, #FFFFFF, #000000);
     justify-content: center;
-    
-
   }
   
 /* ====================
@@ -24,7 +22,7 @@ VISUAL LAYOUT WORK SIMPLE LAYER
 #main-card {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 500px;  
 }
 
 #header {
@@ -33,6 +31,8 @@ VISUAL LAYOUT WORK SIMPLE LAYER
     width: 100%;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 } 
 
 #intro {
@@ -49,7 +49,6 @@ VISUAL LAYOUT WORK SIMPLE LAYER
 #intro p {
     /* border: 2px solid green; */
 }
-
 
 #skills {
     background-color: black;
@@ -86,7 +85,6 @@ VISUAL LAYOUT WORK SIMPLE LAYER
 #footer {
     background-color: black;
     height: 150px;
-    width: 100%;
     color: white;
     text-align: center;
 }
@@ -96,11 +94,6 @@ VISUAL LAYOUT SECOND LAYER
 ==================== */  
 
 /* All header layout stuff */
-
-#main-card #header {
-    display: flex;
-    justify-content: space-between;
-}
 
 #main-card #header p {
     /* border: 2px solid green; */
@@ -112,7 +105,6 @@ VISUAL LAYOUT SECOND LAYER
 
 #hamburger-div {
     background-color: red;
-    height: 100%;
     width: 80px;
 }
 
@@ -129,6 +121,7 @@ VISUAL LAYOUT SECOND LAYER
     /* border: 2px solid purple; */
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 #shortcut-btn-container .shortcut-btn {
@@ -146,6 +139,8 @@ VISUAL LAYOUT SECOND LAYER
 
 
 /* Projects Layout */
+
+/* Both of these probably will just have a height that ultimately adjusts to the content */
 
 #projects {
     /* border: 2px solid LIME; */
@@ -211,11 +206,6 @@ SHARED CSS PROPERTIES
     width: 80%;
     height: 30px;
 }
-
-
-
-
-
 
 /* ====================
 BREAKPOINTS
