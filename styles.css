@@ -158,11 +158,32 @@ VISUAL LAYOUT SECOND LAYER
 
 /* Skills Layout */
 
-#graphic-container {
-    /* border: 2px solid slateblue; */
-    height: 85%;
-    margin: 15px;
+#skills {
+    height: 1700px;
 }
+
+#skills-container {
+    border: 2px solid slateblue;
+    height: 1600px;
+}
+
+.clickable-skill-box {
+    border: 2px solid lime;
+    height: 150px;
+}
+
+.show-skills-box {
+    border: 2px solid red;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hide { 
+    display: none;
+}
+
 
 
 /* Projects Layout */
