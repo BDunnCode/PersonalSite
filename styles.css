@@ -6,6 +6,7 @@ CSS RESET
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
   }
   
   html,
@@ -25,17 +26,27 @@ VISUAL LAYOUT WORK SIMPLE LAYER
     max-width: 500px;  
 }
 
-#header {
+header {
+    position: fixed;
+    display: flex;
     background-color: black;
     height: 80px;
     width: 100%;
     color: white;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+    z-index: 10; /* Might not be necessary */
+    justify-content: center;
 } 
 
+#header-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 900px;
+    justify-content: space-between;
+}
+
 #intro {
+    display: flex;
     background-color: white;
     height: 400px;
     width: 100%;
@@ -46,8 +57,8 @@ VISUAL LAYOUT WORK SIMPLE LAYER
     /* border: 2px solid green; */
 }
 
-#intro p {
-    /* border: 2px solid green; */
+#intro h3 {
+    text-align: center;
 }
 
 #skills {
@@ -95,7 +106,7 @@ VISUAL LAYOUT SECOND LAYER
 
 /* All header layout stuff */
 
-#main-card #header p {
+#header p {
     /* border: 2px solid green; */
     display: flex;
     align-items: center;
@@ -103,9 +114,20 @@ VISUAL LAYOUT SECOND LAYER
     font-size: 1.5em;
 }
 
-#hamburger-div {
-    background-color: red;
-    width: 80px;
+#nav {
+    display: flex;
+    min-width: 160px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav a:hover {
+    opacity: .5;
 }
 
 /* Intro Layout Stuff */
@@ -125,17 +147,43 @@ VISUAL LAYOUT SECOND LAYER
 }
 
 #shortcut-btn-container .shortcut-btn {
-    /* border: 2px solid orangered; */
+    border: 2px solid black; 
     text-align: center;
+}
+
+#shortcut-btn-container .shortcut-btn:hover {
+    opacity: .5;
+    cursor: pointer;
 }
 
 /* Skills Layout */
 
-#graphic-container {
-    /* border: 2px solid slateblue; */
-    height: 85%;
-    margin: 15px;
+#skills {
+    height: 1700px;
 }
+
+#skills-container {
+    border: 2px solid slateblue;
+    height: 1600px;
+}
+
+.clickable-skill-box {
+    border: 2px solid lime;
+    height: 150px;
+}
+
+.show-skills-box {
+    border: 2px solid red;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hide { 
+    display: none;
+}
+
 
 
 /* Projects Layout */
@@ -144,36 +192,46 @@ VISUAL LAYOUT SECOND LAYER
 
 #projects {
     /* border: 2px solid LIME; */
-    height: 1000px;
+    height: 2500px;
 }
 
 .project-container {
     /* border: 2px solid greenyellow; */
-    height: 300px;
 }
 
 .project-header {
-    /* border: 2px solid black; */
+    margin-bottom: 1rem;
 }
 
 .tech-stack {
-    /* border: 2px solid brown; */
-    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tech-used {
+    border: 1px solid black;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 1.5px;
+    margin: 3px;
 }
 
 .collaborators {
-    /* border: 2px solid black; */
-    height: 20px;
+    margin-bottom: 1rem;
 }
 
 .project-description { 
-    /* border: 2px solid gray; */
     height: 20px;
+    margin-bottom: 1rem;
 }
 
 .note {
     /* border: 2px solid black; */
     height: 20px;
+    margin-bottom: 1rem;
 }
 
 .btn-container {
@@ -181,9 +239,15 @@ VISUAL LAYOUT SECOND LAYER
     height: 20px;
 }
 
+.btn-container a {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
 .demo-container {
-    height: 50%;
-    background-color: red;
+    border: 2px solid black;
+    margin: none;
 }
 
 /* ====================
@@ -199,6 +263,10 @@ SHARED CSS PROPERTIES
     /* border: 2px solid lightsalmon; */
     margin: 10px;
     font-size: 24px;
+}
+
+.text-pop {
+    color: #07aa0f;
 }
 
 .input {
