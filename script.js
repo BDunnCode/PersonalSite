@@ -1,9 +1,7 @@
-let frontBox = document.getElementById('frontBox')
-let toolBox = document.getElementById('')
-let backBox = document.getElementById('')
-let frontSkillBox = getElementById('frontSkills')
-let toolSkillBox = getElementById('')
-let backSkillBox = getElementById('')
+// let toolBox = document.getElementById('')
+// let backBox = document.getElementById('')
+// let toolSkillBox = getElementById('')
+// let backSkillBox = getElementById('')
 
 if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready);
@@ -12,8 +10,12 @@ if (document.readyState == "loading") {
   }
 
 function ready() {
-    frontBox.addEventListener("click", () => {
+    let frontBox = document.getElementById('frontBox')
 
+    frontBox.addEventListener("click", () => {
+        let frontSkillBox = document.getElementById('frontSkills')
+    
+        frontSkillBox.classList.toggle('hide')
     })
 }
 
