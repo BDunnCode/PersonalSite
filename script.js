@@ -1,21 +1,27 @@
-// let toolBox = document.getElementById('')
-// let backBox = document.getElementById('')
-// let toolSkillBox = getElementById('')
-// let backSkillBox = getElementById('')
-
 if (document.readyState == "loading") {
-    document.addEventListener("DOMContentLoaded", ready);
-  } else {
-    ready();
-  }
+  document.addEventListener("DOMContentLoaded", ready);
+} else {
+  ready();
+}
 
 function ready() {
-    let frontBox = document.getElementById('frontBox')
+    const frontBox = document.getElementById('frontBox')
+    const toolBox = document.getElementById('toolBox')
+    const backBox = document.getElementById('backBox')
 
     frontBox.addEventListener("click", () => {
-        let frontSkillBox = document.getElementById('frontSkills')
-    
-        frontSkillBox.classList.toggle('hide')
+      const frontSkillBox = document.getElementById('frontSkills')
+      frontSkillBox.classList.toggle('hide')
+    })
+
+    toolBox.addEventListener("click", () => {
+      const toolSkillBox = document.getElementById('toolSkills')
+      toolSkillBox.classList.toggle('hide')
+    })
+
+    backBox.addEventListener("click", () => {
+      const backSkillBox = document.getElementById('backSkills')
+      backSkillBox.classList.toggle('hide')
     })
 }
 
@@ -29,9 +35,3 @@ function ready() {
 
 
 
-
-// frontSkillGrabber.addEventListener('click', toggleHidden(frontSkillSection))
-
-// function toggleHidden(x) {
-//     x.toggle('hide')
-// } 
